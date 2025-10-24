@@ -5,10 +5,10 @@ pipeline {
         DOCKER_IMAGE = "emnahasnaoui/mon-app"
     }
 
-    stages {
+        stages {
         stage('Cloner le dépôt') {
             steps {
-                git 'https://github.com/emna-hasnaoui/app-devops.git'
+                git branch: 'main', credentialsId: 'github-creds', url: 'https://github.com/emna-hasnaoui/app-devops.git'
             }
         }
 
