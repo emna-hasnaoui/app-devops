@@ -17,3 +17,5 @@ spec:
           image: emnahasnaoui/mon-app:latest
           ports:
             - containerPort: 80
+
+
